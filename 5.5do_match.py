@@ -6,7 +6,7 @@ print('-- simple match --')
 
 score = 'A'
 
-match score:
+match score :
     case 'A':
         print('score is A.')
     case 'B':

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+#
 # 定义了一个list
 s = ['a','b','c','d']
 s.append('z')
