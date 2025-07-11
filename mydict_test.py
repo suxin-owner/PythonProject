@@ -28,7 +28,7 @@ class TestDict(unittest.TestCase):
         print(TestDict.test_attr.__name__)
         d = Dict()
         d.key = "value"
-        self.assertTrue("key" in d)
+        self.assertTrue("key" in d)                #字典中有没有key这个值
         self.assertEqual(d["key"], "value")
 
     def test_keyerror(self):
