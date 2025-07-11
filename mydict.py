@@ -16,7 +16,8 @@ s.city = 'beijing'        # 点语法设置属性
 s.name = 'aaaa'           # 点语法设置属性
 s['sex'] = 'man'          # 传统字典语法设置属性
 print(s)
-#print(s.a)
+# print(s['a'])   #抛出KeyError
+# print(s.a)      #抛出AttributeError
 
 s1 = Dict(a='A',b='B',c='C')
 print(s1)
