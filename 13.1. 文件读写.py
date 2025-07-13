@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 
 #读文件
+from datetime import datetime
+
+
 with open('/Users/ACER/Desktop/testfile.txt','r',encoding='utf-8') as f:
     print(f.read())
 
@@ -12,3 +15,4 @@ with open('/Users/ACER/Desktop/testfile.txt','w',encoding='utf-8') as f:
 
 with open('/Users/ACER/Desktop/testfile.txt','a',encoding='utf-8') as f:
     f.write('\ntainiubile')
+    f.write(datetime.now().strftime("%Y-%m-%d"))
