@@ -1,5 +1,6 @@
 import os
 print(os.name) # 操作系统类型
+print(os.uname())
 print(os.uname().sysname)
 
 print(os.environ)
@@ -46,4 +47,3 @@ L2 = [x for x in os.listdir('/Users/suxin/Desktop/Self/Python/PythonProject') if
 k1 = lambda x :(not x.split('.')[0].isdigit() , int(x.split('.')[0]) if x.split('.')[0].isdigit() else x.split('.')[0])
 for n in sorted(L2 , key = k1):
     print(n)
-
