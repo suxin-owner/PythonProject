@@ -1,4 +1,5 @@
-# task_worker.py
+# 14.5. 分布式进程
+# _14_5_task_worker.py
 
 import time, sys, os
 from multiprocessing import Queue

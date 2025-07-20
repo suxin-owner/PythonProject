@@ -1,4 +1,5 @@
-# task_master.py
+# 14.5. 分布式进程
+# _14_5_task_master.py
 
 import random, time, os
 from multiprocessing import Queue
