@@ -1,12 +1,14 @@
 # task_master.py
 
-import random, time, os, queue
+import random, time, os
+from multiprocessing import Queue
 from multiprocessing.managers import BaseManager
+import multiprocessing
 
 # 发送任务的队列:
-task_queue = queue.Queue()  
+task_queue = Queue()  
 # 接收结果的队列:
-result_queue = queue.Queue() 
+result_queue = Queue() 
 
 def get_task_queue():
     return task_queue
@@ -45,7 +47,7 @@ if __name__ == '__main__':
     # 从result队列读取结果:
     print('Try get results...')
     for i in range(10):
-        r = result.get(timeout=10000)
+        r = result.get(timeout=10)
         print('Result: %s' % r)
         
     # 关闭:
