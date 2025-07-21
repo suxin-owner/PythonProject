@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from mydict import Dict
+from _12_3_mydict import Dict
 
 class TestDict(unittest.TestCase):
     def setUp(self):
