@@ -51,10 +51,20 @@ with create_query('Alcio') as q:
 #---------------------------------------------------------------------------------#
 from contextlib import closing
 from urllib.request import urlopen
+import os
+
+print(os.path.abspath('.'))
 
 with closing(urlopen('https://www.python.org')) as page:
+    print(type(page))
+
     html = page.read()
     print(html.decode('utf-8'))
-    print(type(page))
-    # for line in page:
-    #     print(line)
+    with open('/Users/suxin/Desktop/Self/Python/PythonProject/testfile_16_9_2.txt','a') as f:
+        f.write(html.decode('utf-8'))
+
+    # for i in range(20):
+    #     html = page.readline()
+    #     print(html.decode('utf-8'))
+    #     with open('/Users/suxin/Desktop/Self/Python/PythonProject/testfile_16_9_1.txt','a') as f:
+    #         f.write(html.decode('utf-8'))
