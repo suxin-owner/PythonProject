@@ -80,6 +80,7 @@ with urlopen(req) as resp:
     print('响应体:')
     print(resp.read().decode(),'\n') 
     print(resp.getheader('Content-Type'))  # 获取单个响应头
+    print(type(resp.read().decode()))
 
 
 
